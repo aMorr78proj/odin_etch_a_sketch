@@ -23,6 +23,9 @@ function loadUp(num){
         let blocks = document.createElement("div");
         blocks.setAttribute("id", `block-${i}`);
         blocks.classList.add("boxes");
+        blocks.addEventListener("mouseenter", function(e) {
+            blocks.style.backgroundColor = "gray";
+        });
         container.appendChild(blocks);
     }
 }
